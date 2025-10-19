@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+ 
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2563eb;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+/* Custom checkmark using inline SVG as background */
+.custom-checkbox {
+  appearance: none; /* Remove default checkbox style */
+  width: 0.85rem; /* w-4 */
+  height: 0.85rem; /* h-4 */
+  border: 1.5px solid #9ca3af; /* border-gray-400 */
+  background-color: white;
+  border-radius: 0.25rem; /* same as `rounded` in Tailwind */
+  cursor: pointer;
+  transition: background-color 0s, border-color 0.2s;
+}
+
+/* Checked state: blue background and border */
+.custom-checkbox:checked {
+  background-color: #3b82f6; /* blue-500 */
+  border-color: #3b82f6;
+}
+
+/* Show custom white checkmark image when checked */
+.custom-checkbox:checked {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='white' d='M0 11l2-2 5 5L18 3l2 2L7 18z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
