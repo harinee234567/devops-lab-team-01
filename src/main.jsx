@@ -4,8 +4,8 @@ import './index.css'
 import App from './Exam-info.jsx'
 
 // Import the shared Navbar
-import Navbar from '../main/shared/components/NavBar'
-import '../main/shared/components/NavBar.css'
+import Navbar from '../shared/components/NavBar'
+import '../shared/components/NavBar.css'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar />
