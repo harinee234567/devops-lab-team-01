@@ -6,10 +6,10 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">EduPortal</div>
       <ul className="navbar-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="/">Events</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   );
